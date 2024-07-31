@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão de Notas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="form-container">
+            <div id="bloco1" class="form-block">
+                <h1>Gestão de Notas</h1>
+                <div class="form-group">
+                    <label for="alunoNome">Nome do Aluno:</label>
+                    <input type="text" id="alunoNome" pattern="[A-Za-z\s]+" title="O nome deve conter apenas letras e espaços" required>
+                </div>
+                <button type="button" id="adicionarAluno">Adicionar Aluno</button>
+            </div>
+            <div id="bloco2" class="form-block hidden">
+                <h2>Adicionar Matéria</h2>
+                <div class="form-group">
+                    <label for="materiaNome">Nome da Matéria:</label>
+                    <input type="text" id="materiaNome" pattern="[A-Za-z\s]+" title="O nome da matéria deve conter apenas letras e espaços" required>
+                </div>
+                <div class="form-group">
+                    <label for="notas">Notas (separadas por vírgula):</label>
+                    <input type="text" id="notas" pattern="(\d+(\.\d+)?)(,\s*\d+(\.\d+)?)*" title="As notas devem ser números separados por vírgulas" required>
+                </div>
+                <div class="form-group">
+                    <label for="faltas">Faltas:</label>
+                    <input type="number" id="faltas" min="0" required>
+                </div>
+                <button type="submit" id="adicionarMateria">Adicionar Matéria</button>
+                <button type="button" id="novoAluno">Adicionar Novo Aluno</button>
+            </div>
+        </div>
+        <div id="resultados" class="result-container"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

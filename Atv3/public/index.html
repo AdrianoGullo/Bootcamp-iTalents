@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Bancário</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="form-container">
+            <div id="form-blocks">
+                <!-- Bloco de formulário inicial -->
+                <div class="form-block" id="form-titular">
+                    <label for="titular">Nome do Titular:</label>
+                    <input type="text" id="titular" placeholder="Nome do titular">
+                </div>
+                <button id="criar-conta">Criar Conta</button>
+                <button id="sacar">Sacar</button>
+                <button id="depositar">Depositar</button>
+                <button id="verificar-saldo">Verificar Saldo</button>
+            </div>
+            <div id="form-dinamico" class="hidden"></div>
+        </div>
+        <div class="result-container">
+            <div id="resultado" class="resultado-bloco">
+                <p id="info-conta">Selecione uma ação para ver o resultado aqui.</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Desviar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="form-container">
+            <h1>Controle do Jogo</h1>
+            <div class="form-block">
+                <label for="instructions">Instruções:</label>
+                <p>Use as setas do teclado para mover o personagem.</p>
+                <label for="instructions">Aprimore sua jogabilidade</label>
+                <button id="lojaButton">Loja</button>
+            </div>
+            
+            <div id="fasesContainer" class="form-block hidden">
+                <!-- Os botões das fases serão inseridos aqui -->
+            </div>
+
+            <div class="form-block">
+                <button id="startButton">Iniciar</button>
+            </div>
+        </div>
+        <div class="result-container">
+            <canvas id="gameCanvas" width="800" height="600"></canvas>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="classes.js"></script>
+    <script src="loja.js"></script>
+</body>
+</html>
