@@ -27,18 +27,23 @@ Este projeto é uma aplicação web para gerenciar notas de alunos e matérias. 
    ```bash
    git clone <URL_DO_REPOSITORIO>
 
-2. Navegue até a pasta
+2. **Navegue até a pasta**
 
 cd nome-do-repositorio
 
-3. Instale as dependências
+3. **Instale as dependências**
 
 Se você ainda não tem o server.js, você pode criar um arquivo package.json e instalar o express para servir os arquivos estáticos:
 
-```bash
+    ```bash
     npm init -y
     npm install express
+    ```
 
-4. Inicie o Servidor
-```bash
+4.  **Inicie o Servidor**
+    ```bash
     node server.js
+    ```
+
+5. **Acesse o local da página**
+Abra um navegador e vá para http://localhost:3000 para visualizar e interagir com a aplicação.
