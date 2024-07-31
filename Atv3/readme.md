@@ -27,7 +27,7 @@ O projeto está estruturado da seguinte maneira:
     Se você ainda não fez isso, clone o repositório onde o projeto está localizado:
 
     ```bash
-    git clone <URL_DO_REPOSITORIO>
+    git clone https://github.com/AdrianoGullo/Bootcamp-iTalents/tree/f88262796c627141f663cf7520335825c83fa9be/Atv3
     ```
 
 2. **Navegue para a Pasta do Projeto**:
