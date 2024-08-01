@@ -7,7 +7,7 @@ Conforme o jogador avança pelas fases, a quantidade e a velocidade dos itens au
 ## Funcionalidades
 
 - **Movimentação**: Use as setas do teclado para mover o personagem para a esquerda e para a direita.
-- **Itens**: Coleta de itens como Meteorito, Bomba, Ouro, Vida e Energia, cada um com efeitos distintos.
+- **Itens**: Coleta de itens como Meteorito, Bomba, Ouro e Vida, cada um com efeitos distintos.
 - **Fases**: O jogo tem 10 fases com dificuldade crescente. A cada nova fase, a quantidade de itens gerados aumenta.
 - **Pontuação e Vida**: A pontuação aumenta ao coletar Ouro e diminui ao colidir com Bombas. A Vida do personagem é afetada por Meteoritos e Bombas.
 
@@ -41,11 +41,6 @@ Subclasse de `Item` representando uma moeda de ouro.
 Subclasse de `Item` representando um item de vida.
 
 - **Cor**: Verde
-
-### `Energia`
-Subclasse de `Item` representando um item de energia.
-
-- **Cor**: Azul
 
 ### `Personagem`
 Classe que representa o personagem controlado pelo jogador.
