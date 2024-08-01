@@ -76,9 +76,6 @@ button:hover {
     display: flex;
     flex-direction: column;
     gap: 20px;
-}
-
-.aluno-container {
     border-top: 1px solid #e0e0e0;
     padding-top: 10px;
     background-color: #ffffff;
@@ -88,29 +85,6 @@ button:hover {
     position: relative;
 }
 
-.materias-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
-.materia-container {
-    flex: 1 1 calc(33% - 10px);
-    padding: 10px;
-    border: 1px solid #e0e0e0;
-    border-radius: 6px;
-    background-color: #fafafa;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-.materia-container p {
-    margin: 5px 0;
-}
 
 @media (max-width: 1200px) {
     .main-container {
@@ -120,10 +94,6 @@ button:hover {
     .result-container {
         flex: 1 1 auto;
     }
-
-    .materia-container {
-        flex: 1 1 calc(50% - 10px);
-    }
 }
 
 @media (max-width: 768px) {
@@ -131,31 +101,4 @@ button:hover {
         flex: 1 1 auto;
     }
 
-    .materia-container {
-        flex: 1 1 100%;
-    }
-}
-
-/* Adiciona estilos para o container de fases */
-#fasesContainer {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-top: 10px;
-}
-
-.faseButton {
-    background-color: black;
-    color: white;
-    border: none;
-    border-radius: 6px;
-    padding: 10px;
-    width: 30%; /* 30% do tamanho do botão "Fases" */
-    cursor: pointer;
-    font-size: 16px;
-    text-align: center;
-}
-
-.faseButton:hover {
-    background-color: #333;
 }

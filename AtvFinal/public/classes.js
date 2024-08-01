@@ -1,6 +1,4 @@
-// classes.js
-
-export class Item {
+class Item {
     constructor(x, y) {
         this.x = x;
         this.y = y;
@@ -28,7 +26,7 @@ export class Item {
     }
 }
 
-export class Meteorito extends Item {
+class Meteorito extends Item {
     constructor(x, y) {
         super(x, y);
         this.tipo = 'meteorito';
@@ -39,7 +37,7 @@ export class Meteorito extends Item {
     }
 }
 
-export class Bomba extends Item {
+class Bomba extends Item {
     constructor(x, y) {
         super(x, y);
         this.tipo = 'bomba';
@@ -50,7 +48,7 @@ export class Bomba extends Item {
     }
 }
 
-export class Ouro extends Item {
+class Ouro extends Item {
     constructor(x, y) {
         super(x, y);
         this.tipo = 'ouro';
@@ -61,7 +59,7 @@ export class Ouro extends Item {
     }
 }
 
-export class Vida extends Item {
+class Vida extends Item {
     constructor(x, y) {
         super(x, y);
         this.tipo = 'vida';
@@ -72,18 +70,7 @@ export class Vida extends Item {
     }
 }
 
-export class Energia extends Item {
-    constructor(x, y) {
-        super(x, y);
-        this.tipo = 'energia';
-    }
-
-    getCor() {
-        return 'blue';
-    }
-}
-
-export class Personagem {
+class Personagem {
     constructor(x, y) {
         this.x = x;
         this.y = y;
@@ -101,7 +88,6 @@ export class Personagem {
     coletar(item) {
         if (item.tipo === 'ouro') this.pontuacao += 10;
         if (item.tipo === 'vida') this.vida = Math.min(this.vida + 50, 100);
-        if (item.tipo === 'energia') this.energia += 1;
         if (item.tipo === 'meteorito') this.vida -= 20;
         if (item.tipo === 'bomba') this.vida -= 30;
     }

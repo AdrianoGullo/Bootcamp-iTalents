@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jogo de Desviar</title>
+    <title>Atrás do Ouro</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -13,24 +13,21 @@
             <div class="form-block">
                 <label for="instructions">Instruções:</label>
                 <p>Use as setas do teclado para mover o personagem.</p>
-                <label for="instructions">Aprimore sua jogabilidade</label>
-                <button id="lojaButton">Loja</button>
             </div>
-            
-            <div id="fasesContainer" class="form-block hidden">
-                <!-- Os botões das fases serão inseridos aqui -->
-            </div>
-
-            <div class="form-block">
-                <button id="startButton">Iniciar</button>
-            </div>
+            <!-- legenda -->
+            <ul>
+                <li><span class="item-tag" style="background-color: red; color: white; border-radius: 5px;">Meteorito</span>: Reduz a vida em 20.</li>
+                <li><span class="item-tag" style="background-color: gray; color: white; border-radius: 5px;">Bomba</span>: Reduz a vida em 30.</li>
+                <li><span class="item-tag" style="background-color: yellow; color: black; border-radius: 5px;">Ouro</span>: Adiciona 10 pontos à sua pontuação.</li>
+                <li><span class="item-tag" style="background-color: green; color: white; border-radius: 5px;">Vida</span>: Restaura 50 pontos de vida.</li>
+            </ul>            
         </div>
+        
         <div class="result-container">
             <canvas id="gameCanvas" width="800" height="600"></canvas>
         </div>
     </div>
-    <script src="script.js"></script>
     <script src="classes.js"></script>
-    <script src="loja.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
